@@ -61,7 +61,7 @@ def rtCW(matrix, maxLength):
 	rC = len(matrix)
 	cC = len(matrix[0])
 	print("Matrix:\n{}".format(btfy(matrix, maxLength)))
-	print("Matrix size: {} x {}".format(cC, rC)) # you're screwed if input isn't an nxn matrix. trust me on that one.
+	print("Matrix size: {} x {}".format(cC, rC)) # you're screwed if input isn't an NxN matrix. trust me on that one.
 	lC = int(max(rC,  cC) / 2) if max(rC,  cC) % 2 == 0 else int((max(rC, cC) - 1) / 2)
 	for l in range(1, lC+1):
 		for i in range(l-1, rC-l):
@@ -74,7 +74,7 @@ def rtAC(matrix, maxLength):
 	rC = len(matrix)
 	cC = len(matrix[0])
 	print("Matrix:\n{}".format(btfy(matrix, maxLength)))
-	print("Matrix size: {} x {}".format(cC, rC)) # you're screwed if input isn't an nxn matrix. trust me on that one.
+	print("Matrix size: {} x {}".format(cC, rC)) # you're screwed if input isn't an NxN matrix. trust me on that one.
 	lC = int(max(rC,  cC) / 2) if max(rC,  cC) % 2 == 0 else int((max(rC, cC) - 1) / 2)
 	for l in range(1, lC+1):
 		for i in range(rC-l, l-1, -1):
@@ -114,7 +114,8 @@ def fpHZ(matrix, maxLength):
 
 matrix3x3 = [[1,2,3],[4,5,6],[7,8,9]]
 matrix4x4 = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
-matrix4x3 = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] # pls dont use UwU
+matrix4x3 = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] #! matrix-tools is designed for NxN matrices !
+
 
 #print(btfy(rt90CW(matrix4x4, 4), 4))
 #print(btfy(rt90AC(matrix4x4, 4), 4))
