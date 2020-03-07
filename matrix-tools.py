@@ -115,7 +115,6 @@ matrix3x3 = [[1,2,3],[4,5,6],[7,8,9]]
 matrix4x4 = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
 matrix4x3 = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] #! matrix-tools is designed for NxN matrices !
 
-
 #print(btfy(rt90CW(matrix4x4, 4), 4))
 #print(btfy(rt90AC(matrix4x4, 4), 4))
 #print(btfy(matrix4x4, 4))
