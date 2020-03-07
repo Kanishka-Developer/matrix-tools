@@ -12,7 +12,6 @@ def btfy(matrix, maxLength): # beautifies matrix for easier viewing
 					for v in range(0, maxLength + 1 - len(str(i))):
 						s = s + " "
 					x = x + str(i) + s
-
 				else:
 					x = x + str(i)
 			op = op + x + "\n"
